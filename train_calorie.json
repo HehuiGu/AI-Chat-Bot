@@ -1,0 +1,668 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": ["veggie", "vegg"]
+      },
+      {
+        "value": "hi",
+        "synonyms": ["expensive", "valued"]
+      },
+      {
+        "value": "lo",
+        "synonyms": ["cheap"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+	  
+	  
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      
+      {
+        "text": "I think 2000 calories one day is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "2000",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  {
+        "text": "I think 2000 calories one day",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "2000",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  {
+        "text": "2000 calories one day is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "2000",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  {
+        "text": "I think 3000 calories one day is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "3000",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  {
+        "text": "2000 calories one day is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "2000",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  {
+        "text": "1500 calories one day is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1500",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  {
+        "text": "1500 calories is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1500",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  
+	  {
+        "text": "2000 calories is fine",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "2000",
+            "entity": "targetCalories"
+          }
+        ]
+      },
+	  
+	  {
+        "text": "It must have chicken",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "chicken",
+            "entity": "diet"
+          }
+        ]
+      },
+	  {
+        "text": "It must have beef",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "beef",
+            "entity": "diet"
+          }
+        ]
+      },
+	  {
+        "text": "I wish have chicken",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "chicken",
+            "entity": "diet"
+          }
+        ]
+      },
+	  {
+        "text": "I wish have apple",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "apple",
+            "entity": "diet"
+          }
+        ]
+      },
+	  {
+        "text": "with apple",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "apple",
+            "entity": "diet"
+          }
+        ]
+      },
+	  {
+        "text": "with chicken",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "chicken",
+            "entity": "diet"
+          }
+        ]
+      },
+	  {
+        "text": "with pear",
+        "intent": "meal_plan",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "pear",
+            "entity": "diet"
+          }
+        ]
+      },
+      {
+        "text": "Please show me the pie diagram?",
+        "intent": "pie",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Please show me the pie plot?",
+        "intent": "pie",
+        "entities": [
+		
+        ]
+      },
+	  {
+        "text": "Show me the pie diagram",
+        "intent": "pie",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Show me the pie diagram",
+        "intent": "pie",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Show me the pie",
+        "intent": "pie",
+        "entities": [
+		
+        ]
+      },
+	  {
+        "text": "What can you do for me?",
+        "intent": "ask_condition",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "What can you do?",
+        "intent": "ask_condition",
+        "entities": [
+		
+        ]
+      },
+	  {
+        "text": "What things can you do for me?",
+        "intent": "ask_condition",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "What things can you do?",
+        "intent": "ask_condition",
+        "entities": [
+		
+        ]
+      },
+	  {
+        "text": "I would like to order some food",
+        "intent": "order",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Mary would like to order some food",
+        "intent": "order",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Order some food",
+        "intent": "order",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "I want to order some food",
+        "intent": "order",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "I want to order some fruit",
+        "intent": "order",
+        "entities": [
+		
+        ]
+      },
+	  {
+        "text": "Can you give me a meal plan",
+        "intent": "plan",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Can you give me a plan",
+        "intent": "plan",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Can you give Mary a meal plan",
+        "intent": "plan",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "Can you give him a meal plan",
+        "intent": "plan",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "https://images.spoonacular.com/file/wximages/323386-312x231.png",
+        "intent": "url",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "https://eyfwivdjlk;sda.png",
+        "intent": "url",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "How many calories of it?",
+        "intent": "ask_calories",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "How many calories?",
+        "intent": "ask_calories",
+        "entities": [
+		
+        ]
+      },
+	  {
+        "text": "How many calories of them?",
+        "intent": "ask_calories",
+        "entities": [
+		
+        ]
+      },
+	  
+	  {
+        "text": "I want to eat burger",
+        "intent": "food",
+        "entities": [
+		{
+            "start": 14,
+            "end": 20,
+            "value": "burger",
+            "entity": "food"
+          }
+        ]
+      },
+	  
+	  {
+        "text": "I want to eat chicken",
+        "intent": "food",
+        "entities": [
+		{
+            "start": 14,
+            "end": 20,
+            "value": "chicken",
+            "entity": "food"
+          }
+        ]
+      },
+	  
+	  
+	  
+	  {
+        "text": "I want to drink water",
+        "intent": "food",
+        "entities": [
+		{
+            "start": 16,
+            "end": 21,
+            "value": "water",
+            "entity": "food"
+          }
+        ]
+      },
+	  
+	  {
+        "text": "I want to drink juice",
+        "intent": "food",
+        "entities": [
+		{
+            "start": 16,
+            "end": 21,
+            "value": "juice",
+            "entity": "food"
+          }
+        ]
+      },
+	  
+	  {
+        "text": "Could you recommend some food ?",
+        "intent": "recommand",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "Could you recommend some drink ?",
+        "intent": "recommand",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "PandaExpress is good",
+        "intent": "restaurant",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "Mcdonalds is good",
+        "intent": "restaurant",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "KFC is fine",
+        "intent": "restaurant",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "BurgerKing is fine",
+        "intent": "restaurant",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "123",
+        "intent": "number",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "123098767",
+        "intent": "number",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "12345486907",
+        "intent": "number",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "do you remember my birthday",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "do you remember my name",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "do you remember my car",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      },
+	  {
+        "text": "do you remember my dog",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "if there is a park",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "if you have a pet",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      },
+	  
+	  {
+        "text": "if I am shy",
+        "intent": "chat",
+        "entities": [
+	
+        ]
+      }
+	  
+	  
+    ]
+  }
+}
