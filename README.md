@@ -34,3 +34,7 @@ bot = telebot.TeleBot('YOUR TOKEN')
 ```
 * Activate your enviroment and run OrderFood_ControlCalories.py
 * Send messages to your bot in Telegram App
+
+## Contact
+If you have any question, please feel free to contact with me
+My email: guhehui0206@163.com or 271204788@qq.com
